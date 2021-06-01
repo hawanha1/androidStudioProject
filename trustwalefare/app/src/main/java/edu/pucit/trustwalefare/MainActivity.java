@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             default:
                 i = new Intent(this,signUp.class);
                 startActivity(i);
-
+                break;
         }
 
     }
