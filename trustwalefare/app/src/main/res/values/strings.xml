@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MCFinalProject</string>
+    <string name="background">background</string>
+    <string name="fundriser_alert_view">Fundriser Alert VIEW</string>
+    <string name="welcome_to_fundriser">Welcome To Fundriser</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="log_in">Log in</string>
+    <string name="fundriser_account_signup">Fundriser Account SignUp</string>
+    <string name="username">User Name</string>
+    <string name="create_account">Create account</string>
+    <string name="todo1">TODO</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="language">LANGUAGE</string>
+    <string name="info">INFO</string>
+    <string name="todo">TODO</string>
+    <string name="mainimage">mainImage</string>
+    <string name="donarimage">donarImage</string>
+    <string name="fundriser_account_signIn">FundRiser Account Sign In</string>
+    <string name="phone">Phone Number</string>
+</resources>

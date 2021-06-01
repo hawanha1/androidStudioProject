@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logoImage" type="id"/>
+    <item name="titleText" type="id"/>
+    <item name="inputEmail" type="id"/>
+    <item name="inputPassword" type="id"/>
+    <item name="logInButton" type="id"/>
+    <item name="signUpButton" type="id"/>
+    <item name="inputName" type="id"/>
+    <item name="inputPhone" type="id"/>
+</resources>
