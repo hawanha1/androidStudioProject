@@ -7,12 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     Bundle bundle;
     Intent i;
-    AutoCompleteTextView textView;
+    EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,19 +24,18 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.logInButton).setOnClickListener(this::onClick);
     }
 
-    @SuppressLint("WrongViewCast")
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.logInButton:
                 i = new Intent(this,HomeActivity.class);
-                textView=(AutoCompleteTextView)findViewById(R.id.inputEmail);
+                editText=findViewById(R.id.inputEmail);
                 bundle=new Bundle();
-                String email=textView.getText().toString();
-                bundle.putString("email",email);
+                String email=editText.getText().toString();
+                bundle.putString("keyEmail",email);
                 i.putExtras(bundle);
-                textView=(AutoCompleteTextView)findViewById(R.id.inputPassword);
-                String password=textView.getText().toString();
-                bundle.putString("password",password);
+                editText=findViewById(R.id.inputPassword);
+                String password=editText.getText().toString();
+                bundle.putString("keyPassword",password);
                 i.putExtras(bundle);
                 startActivity(i);
                 break;
