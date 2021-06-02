@@ -72,6 +72,7 @@
         android:background="@drawable/gradient_button"
         android:textColorHint="@color/gradiant"
         android:padding="10dp"
+        android:layout_alignParentLeft="true"
         />
     <Button
         android:id="@+id/signUpButton"
@@ -84,5 +85,6 @@
         android:layout_marginRight="50dp"
         android:background="@drawable/gradient_button"
         android:textColor="@color/gradiant"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:layout_alignParentRight="true"/>
 </RelativeLayout>
