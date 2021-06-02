@@ -3,5 +3,5 @@
     <stroke android:width="3dp"
         android:color="@color/gradiant"/>
     <corners android:radius="20dp"/>
-    <solid android:color="#310952"/>
+    <solid android:color="#5B0690"/>
 </shape>
