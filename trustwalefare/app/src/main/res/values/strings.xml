@@ -19,4 +19,13 @@
     <string name="donarimage">donarImage</string>
     <string name="fundriser_account_signIn">FundRiser Account Sign In</string>
     <string name="phone">Phone Number</string>
+    <string-array name="OrganizationNames">
+        <item>Organization1</item>
+        <item>Organization2</item>
+        <item>Organization3</item>
+        <item>Organization4</item>
+        <item>Organization5</item>
+        <item>Organization6</item>
+        <item>Organization7</item>
+    </string-array>
 </resources>
