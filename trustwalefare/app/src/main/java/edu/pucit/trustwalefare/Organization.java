@@ -15,6 +15,7 @@ public class Organization extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_organization);
+
         recyclerView=findViewById(R.id.OrganizationRecyclerView);
         s1=getResources().getStringArray(R.array.OrganizationNames);
 
