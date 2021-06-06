@@ -1,9 +1,11 @@
 package edu.pucit.trustwalefare;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.RelativeLayout;
 
 public class Organization extends AppCompatActivity {
     String s1[];
@@ -17,5 +19,7 @@ public class Organization extends AppCompatActivity {
         s1=getResources().getStringArray(R.array.OrganizationNames);
 
         recyclerViewAdapter recyclerAdapter=new recyclerViewAdapter(this,s1,images);
+        recyclerView.setAdapter(recyclerAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
