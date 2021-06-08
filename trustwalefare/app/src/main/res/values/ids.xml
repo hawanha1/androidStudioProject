@@ -8,4 +8,5 @@
     <item name="signUpButton" type="id"/>
     <item name="inputName" type="id"/>
     <item name="inputPhone" type="id"/>
+    <item name="openButton" type="id"/>
 </resources>
