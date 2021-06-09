@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trustwalefare">
+        <activity android:name=".open_organization"
+            android:parentActivityName=".Organization"
+            android:label="open Organization"/>
+        <activity android:name=".edit_organization"
+            android:parentActivityName=".Organization"
+            android:label="edit Organization"/>
+        <activity android:name=".add_donor"
+            android:parentActivityName=".Organization"
+            android:label="add Donor"/>
         <activity android:name=".Donor" />
         <activity android:name=".Organization" />
         <activity android:name=".HomeActivity" />

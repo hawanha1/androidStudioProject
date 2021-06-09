@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_organization"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_baseline_bubble_chart_40"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organizations"
+        android:textColor="@color/gradiant"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/donorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:text="add New Name of Organization"
+        android:textColor="@color/gradiant"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_input"
+        />
+    <EditText
+        android:id="@+id/imageSelcetor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donorId"
+        android:text="select image"
+        android:textColor="@color/gradiant"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_input"
+        />
+    <RelativeLayout
+        android:id="@+id/buttonPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageSelcetor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@color/gradiant"
+            android:background="@drawable/gradient_button"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:textColor="@color/gradiant"
+            android:background="@drawable/gradient_button"
+            android:layout_toRightOf="@+id/addButton"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:id="@+id/mainRowLayout">
 
 
     <androidx.cardview.widget.CardView
@@ -67,17 +68,6 @@
                 android:background="@drawable/buttons_style"
                 android:layout_margin="5dp"
                 android:textColor="@color/gradiant"
-                />
-            <Button
-                android:id="@id/openButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView"
-                android:layout_toRightOf="@+id/editButton"
-                android:text="Open Org"
-                android:layout_margin="5dp"
-                android:textColor="@color/gradiant"
-                android:background="@drawable/buttons_style"
                 />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

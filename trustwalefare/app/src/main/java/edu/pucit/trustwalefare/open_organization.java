@@ -4,27 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RelativeLayout;
 
-public class Organization extends AppCompatActivity {
+public class open_organization extends AppCompatActivity {
     String s1[];
     int images[]={R.drawable.admin,R.drawable.donor,R.drawable.background,R.drawable.organization,R.drawable.member,R.drawable.admin,R.drawable.donor};
     RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_organization);
+        setContentView(R.layout.activity_open_organization);
 
-        recyclerView=findViewById(R.id.OrganizationRecyclerView);
+        recyclerView=findViewById(R.id.openOrganizationView);
         s1=getResources().getStringArray(R.array.OrganizationNames);
 
-        recyclerViewAdapter recyclerAdapter=new recyclerViewAdapter(this,s1,images);
-        recyclerView.setAdapter(recyclerAdapter);
+        DonorRecyclerViewAdapter donorRecyclerViewAdapter=new DonorRecyclerViewAdapter(this,s1,images);
+        recyclerView.setAdapter(donorRecyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-
 }

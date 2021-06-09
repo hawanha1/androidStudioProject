@@ -9,4 +9,5 @@
     <item name="inputName" type="id"/>
     <item name="inputPhone" type="id"/>
     <item name="openButton" type="id"/>
+    <item name="editButton" type="id"/>
 </resources>
