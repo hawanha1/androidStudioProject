@@ -14,11 +14,11 @@ public class Donor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor);
-        recyclerView=findViewById(R.id.donationId);
+        recyclerView=findViewById(R.id.DonorOrganizationsRecyclerView);
         s1=getResources().getStringArray(R.array.OrganizationNames);
 
-        recyclerViewAdapter recyclerAdapter=new recyclerViewAdapter(this,s1,images);
-        recyclerView.setAdapter(recyclerAdapter);
+        DonorRecyclerViewAdapter donorRecyclerViewAdapter=new DonorRecyclerViewAdapter(this,s1,images);
+        recyclerView.setAdapter(donorRecyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trustwalefare">
-        <activity android:name=".Donor"></activity>
+        <activity android:name=".Donor" />
         <activity android:name=".Organization" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".signUp" />
