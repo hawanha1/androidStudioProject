@@ -10,14 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trustwalefare">
         <activity android:name=".open_organization"
-            android:parentActivityName=".Organization"
-            android:label="open Organization"/>
+            android:parentActivityName=".Organization"/>
         <activity android:name=".edit_organization"
-            android:parentActivityName=".Organization"
-            android:label="edit Organization"/>
+            android:parentActivityName=".Organization"/>
         <activity android:name=".add_donor"
-            android:parentActivityName=".Organization"
-            android:label="add Donor"/>
+            android:parentActivityName=".Organization"/>
         <activity android:name=".Donor" />
         <activity android:name=".Organization" />
         <activity android:name=".HomeActivity" />

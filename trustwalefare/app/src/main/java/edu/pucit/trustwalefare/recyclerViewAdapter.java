@@ -42,10 +42,10 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
                 context.startActivity(intent);
             }
         });
-        holder.edit.setOnClickListener(new View.OnClickListener() {
-            @Override
+       holder.edit.setOnClickListener(new View.OnClickListener() {
+           @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,add_donor.class);
+               Intent intent = new Intent(context,add_donor.class);
                 intent.putExtra("organizationName",data[position]);
                 intent.putExtra("organizationImage",images[position]);
                 context.startActivity(intent);
