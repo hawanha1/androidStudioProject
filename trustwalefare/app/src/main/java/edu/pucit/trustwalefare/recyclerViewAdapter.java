@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -70,7 +71,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView myTextView;
         ImageView myImages;
-        ConstraintLayout main_layout;
+        LinearLayout main_layout;
         Button add,edit;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

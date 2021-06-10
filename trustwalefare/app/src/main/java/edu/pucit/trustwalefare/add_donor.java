@@ -17,21 +17,13 @@ public class add_donor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_donor);
 
-        organizationName=findViewById(R.id.textView);
-        organizationLogo=findViewById(R.id.imageView);
+        organizationName = findViewById(R.id.textView);
+        organizationLogo = findViewById(R.id.imageView);
 
-        getData();
-        setData();
-    }
-    private void getData(){
-        if(getIntent().hasExtra("organizationImage")&& getIntent().hasExtra("organizationName")){
-            name=getIntent().getStringExtra("organizationName");
-            logo=getIntent().getIntExtra("organizationImage",1);
-        }else{
-            Toast.makeText(this,"No data.",Toast.LENGTH_SHORT).show();
-        }
-    }
-    private void setData(){
+        name = getIntent().getStringExtra("organizationName");
+        logo = getIntent().getIntExtra("organizationImage", 1);
+
+
         organizationName.setText(name);
         organizationLogo.setImageResource(logo);
     }
